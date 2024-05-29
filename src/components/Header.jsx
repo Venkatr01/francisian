@@ -10,29 +10,37 @@ import {
 function Header() {
   return (
     // <Router>
-      <div className='flex justify-between align-center p-1 border-solid border-b-2 border-gray-200 '>
+      <div className='flex justify-between items-center p-1 border-solid border-b-2 border-black bg-header'>
         <div className='flex p-2 text-xl' >
-          <h1 className='  flex justify-center text-black '>Francisian</h1>
+          <h1 className='  flex justify-center  text-white font-press-start '>Francisian</h1>
         </div>
-          <div className='flex justify-center p-2 text-blue-800' >
-              <ul className='flex gap-6 justify-center align-middle' >
+          <div className='flex justify-center p-2 text-blue-800 scroll-smooth' >
+              <ul className='flex gap-6 justify-center items-center' >
               <li>
-                <img src="" alt="" />
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-              <Link to="/announcements">Announcements</Link>
-              </li>
-              <li>
-              <Link to="/events">Events</Link>
-
-              </li>
-              <li>
-                <NavLink to="/market" >
-                  Market
+                <NavLink to="/" className={({ isActive }) => (isActive ? "text-white" : 'text-active')} >
+                  Home
                 </NavLink>
               </li>
-              <li>Assignments</li>
+              <li>
+                <NavLink to="/announcements" className={({ isActive }) => (isActive ? "text-white" : 'text-active')} >
+                  Announcements
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/events" className={({ isActive }) => (isActive ? "text-white" : 'text-active')} >
+                Events
+                </NavLink>
+              </li>
+              <li className='' >
+                <NavLink to="/market" className={({ isActive }) => (isActive ? "text-white" : 'text-active')} >
+                  Marketplace
+                </NavLink>
+              </li>
+              <li className='' >
+                <NavLink to="/assignments" className={({ isActive }) => (isActive ?   "text-white" : 'text-active') } >
+                Assignments
+                </NavLink>
+              </li>
           </ul>
           </div>
       </div>

@@ -16,7 +16,7 @@ function Home() {
 
     { name: "Rishi", birthday: "27-4" },
     { name: "Hemanth", birthday: "02-7" },
-    { name: "Ankit", birthday: "28-12" },
+    { name: "Ankit", birthday: "30-12" },
     { name: "Bharat", birthday: "18-5" },
     { name: "Diwakar", birthday: "1-11" },
     { name: "Deepak pt", birthday: "16-5" },
@@ -28,18 +28,17 @@ function Home() {
   ];
 
   const birthdayToday = people.filter(person => person.birthday === formattedDate);
-  // console.log(birthdayToday)
   const namesWithBirthdayToday = birthdayToday.map(person => person.name);
-  console.log("Happy Birthday "+ namesWithBirthdayToday.join(', '));
   setMsg("Happy Birthday "+ namesWithBirthdayToday.join(', '))
  
   },[])
   
 
   return (
-    <div className='flex justify-center align-middle py-64 ' >
+    <div className='flex justify-center align-middle py-64 bg-custom-gray ' >
         <div className='flex border-solid border-b-2 border-pink-200 flex-row gap-3' >
-            {/* Welcome Home baby!! */}
+            {/* Welcome Home baby!!
+             */}
           {msg}
         </div>
     </div>

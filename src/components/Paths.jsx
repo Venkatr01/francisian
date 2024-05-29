@@ -6,6 +6,7 @@ import Market from './Market';
 import Root from './Root';
 import Home from './Home';
 import Events from './Events';
+import Assignments from './Assignments';
 
 function Paths() {
   return (
@@ -17,6 +18,7 @@ function Paths() {
             <Route path='/announcements' element={<Announcements/>} />
             <Route path='/events' element={<Events/>} />
             <Route path='/market' element= { <Market /> } />
+            <Route path='/assignments' element= { <Assignments /> } />
           </Route>
         </Routes>
       </BrowserRouter>
