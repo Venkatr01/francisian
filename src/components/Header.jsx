@@ -17,6 +17,7 @@ function Header() {
           <div className='flex justify-center p-2 text-blue-800' >
               <ul className='flex gap-6 justify-center align-middle' >
               <li>
+                <img src="" alt="" />
                 <Link to="/">Home</Link>
               </li>
               <li>
