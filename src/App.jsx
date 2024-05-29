@@ -9,7 +9,7 @@ import Paths from './components/Paths';
 
 function App() {
   return (
-    <div className='bg-custom-gray'>
+    <div className='bg-white'>
     <Paths/>
     </div>
   )
