@@ -35,7 +35,7 @@ function Home() {
   
 
   return (
-    <div className='flex justify-center align-middle py-64 bg-custom-gray ' >
+    <div className='flex justify-center align-middle py-64 bg-white ' >
         <div className='flex border-solid border-b-2 border-pink-200 flex-row gap-3' >
             {/* Welcome Home baby!!
              */}
