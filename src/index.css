@@ -4,8 +4,85 @@
 
 html{
   scroll-behavior: smooth;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
+body{
+  background-color: rgb(233, 35, 35);
+}
+
+
+
+@keyframes float {
+  0% {
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.balloon {
+  width: 50px;
+  height: 60px;
+  /* background-color: #ff69b4; */
+  border-radius: 60% 60% 60% 60%;
+  position: absolute;
+  bottom: -100px;
+  animation: float 6s ease-in-out infinite;
+  box-shadow: inset -8px -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.balloon::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background-color: #0c0b0b;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.balloon::after {
+  content: '';
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 16px;
+  background: linear-gradient(to bottom, #ff69b4 0%, #ff69b4 50%, transparent 50%, transparent 100%);
+  border-radius: 0 0 50% 50%;
+}
+
+.balloon-1 {
+  left: 20%;
+  background-color: #ff69b4;
+  animation-delay: 0s;
+}
+
+.balloon-2 {
+  left: 40%;
+  background-color: #ff4500;
+  animation-delay: 1.5s;
+}
+
+.balloon-3 {
+  left: 60%;
+  background-color: #ffd700;
+  animation-delay: 3s;
+}
+
+.balloon-4 {
+  left: 80%;
+  background-color: #1e90ff;
+  animation-delay: 4.5s;
+}
+
+
 
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

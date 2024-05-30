@@ -1,17 +1,15 @@
 import React, { useEffect, useState } from 'react'
-
+import Happybirthday from './Happybirthday';
 function Home() {
   const [msg,setMsg] = useState("Welcome");
-//  useEffect(()=>{
-//   Birthday();
-//  },[])
+
   useEffect(()=>{
     const date = new Date();
   const day = date.getDate()
   const month = date.getMonth()
   const formattedDate = `${day}-${month+1}`
   const people = [
-    { name: "Deepak Sirvee", birthday: "01-5" },
+    { name: "Deepak Sirvee", birthday: "31-5" },
     { name: "venkat ", birthday: "29-5" },
 
     { name: "Rishi", birthday: "27-4" },
@@ -37,11 +35,10 @@ function Home() {
   
 
   return (
-    <div className='flex justify-center align-middle py-64 bg-white ' >
-        <div className='flex border-solid border-b-2 border-pink-200 flex-row gap-3' >
-            {/* Welcome Home baby!!
-             */}
-          {msg}
+    <div className='mt-0 flex justify-center align-middle ' >
+        <div className='flex flex-row gap-1' >
+          <Happybirthday name={msg} />
+          {/* {msg} */}
         </div>
     </div>
   )

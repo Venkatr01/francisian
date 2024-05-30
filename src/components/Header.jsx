@@ -6,38 +6,41 @@ import {
   Link,
   NavLink
 } from "react-router-dom";
+import newlogo from '../assets/logo1.png'
+
 
 function Header() {
   return (
     // <Router>
-      <div className='flex justify-between items-center p-1 border-solid border-b-2 border-black bg-header'>
+      <div className='flex justify-between items-center w-screen  border-solid border-b-2 border-black bg-gray-800 '>
         <div className='flex p-2 text-xl' >
-          <h1 className='  flex justify-center  text-white font-press-start '>Francisian</h1>
+          {/* <h1 className='  flex justify-center  text-white font-press-start '>Francisian</h1> */}
+          <img className='w-22 h-10' src={newlogo} alt="loading.." />
         </div>
           <div className='flex justify-center p-2 text-blue-800 scroll-smooth' >
               <ul className='flex gap-6 justify-center items-center' >
-              <li>
-                <NavLink to="/" className={({ isActive }) => (isActive ? "text-white" : 'text-active')} >
+              <li className='text-gray-400 hover:bg-gray-700 hover:text-white p-2 rounded-md'>
+                <NavLink to="/" className={({ isActive }) => (isActive ? "text-white" : 'text-white')} >
                   Home
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/announcements" className={({ isActive }) => (isActive ? "text-white" : 'text-active')} >
+              <li className='text-gray-400 hover:bg-gray-700 hover:text-white p-2 rounded-md'>
+                <NavLink to="/announcements" className={({ isActive }) => (isActive ? "text-white" : 'text-white')} >
                   Announcements
                 </NavLink>
               </li>
-              <li>
-                <NavLink to="/events" className={({ isActive }) => (isActive ? "text-white" : 'text-active')} >
+              <li className='text-gray-400 hover:bg-gray-700 hover:text-white p-2 rounded-md'>
+                <NavLink to="/events" className={({ isActive }) => (isActive ? "text-white" : 'text-white')} >
                 Events
                 </NavLink>
               </li>
-              <li className='' >
-                <NavLink to="/market" className={({ isActive }) => (isActive ? "text-white" : 'text-active')} >
+              <li className='text-gray-400 hover:bg-gray-700 hover:text-white p-2 rounded-md' >
+                <NavLink to="/market" className={({ isActive }) => (isActive ? "text-white" : 'text-white')} >
                   Marketplace
                 </NavLink>
               </li>
-              <li className='' >
-                <NavLink to="/assignments" className={({ isActive }) => (isActive ?   "text-white" : 'text-active') } >
+              <li className='text-gray-400 hover:bg-gray-700 hover:text-white p-2 rounded-md' >
+                <NavLink to="/assignments" className={({ isActive }) => (isActive ?   "text-white" : 'text-white p-2') } >
                 Assignments
                 </NavLink>
               </li>

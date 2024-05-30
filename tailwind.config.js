@@ -14,7 +14,8 @@ export default {
       },
       fontFamily: {
         'press-start': ['"Major Mono Display"', 'monospace'],
-        'header-font': [' "Merriweather"','serif']
+        'headerf': [' "Merriweather"','serif'],
+        'bday': [' "Poetsen One"','sans-serif']
       },
     },
   },
