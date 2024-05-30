@@ -16,7 +16,7 @@ function Home() {
 
     { name: "Rishi", birthday: "27-4" },
     { name: "Hemanth", birthday: "02-7" },
-    { name: "Ankit", birthday: "30-12" },
+    { name: "Ankit", birthday: "30-5" },
     { name: "Bharat", birthday: "18-5" },
     { name: "Diwakar", birthday: "1-11" },
     { name: "Deepak pt", birthday: "16-5" },
@@ -29,6 +29,8 @@ function Home() {
 
   const birthdayToday = people.filter(person => person.birthday === formattedDate);
   const namesWithBirthdayToday = birthdayToday.map(person => person.name);
+  console.log(namesWithBirthdayToday)
+
   setMsg("Happy Birthday "+ namesWithBirthdayToday.join(', '))
  
   },[])
