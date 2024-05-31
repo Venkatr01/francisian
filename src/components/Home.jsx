@@ -21,7 +21,9 @@ function Home() {
     { name: "Deepak pt", birthday: "16-5" },
     { name: "Preetham", birthday: "19-2" },
     { name: "Akash p", birthday: "10-12" },
-    { name: "Akash Maurya", birthday: "31-1" },
+    { name: "Akash Maurya", birthday: "01-6" },
+    { name: "Akash Maurya", birthday: "1-6" },
+
     { name: "Sahil", birthday: "23-1" },
     { name: "Vamsi", birthday: "23-5" }
   ];
