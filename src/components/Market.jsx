@@ -5,7 +5,7 @@ function Market() {
     image: 'https://images-na.ssl-images-amazon.com/images/I/91OlNrX9RbL.png',
     name: 'The Vikings',
     price: 999,
-    stock: 12,
+    // stock: 12,
   };
 
   return (
@@ -33,7 +33,7 @@ function ProductCard ({ product }){
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{product.name}</div>
         <p className="text-gray-700 text-base">Price: ₹{product.price}</p>
-        <p className="text-gray-700 text-base">Stock left: {product.stock}</p>
+        {/* <p className="text-gray-700 text-base">Stock left: {product.stock}</p> */}
       </div>
     </div>
   );
