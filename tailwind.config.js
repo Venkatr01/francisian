@@ -17,6 +17,10 @@ export default {
         'headerf': [' "Merriweather"','serif'],
         'bday': [' "Poetsen One"','sans-serif']
       },
+      backgroundImage: {
+        'celeb': "url('https://purepng.com/public/uploads/large/celebration-confetti-1bp.png')",
+        // 'footer-texture': "url('/img/footer-texture.png')",
+      }
     },
   },
   plugins: [],

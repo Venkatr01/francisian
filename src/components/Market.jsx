@@ -28,7 +28,8 @@ function Market() {
 function ProductCard ({ product }){
   return (
     <div className="flex flex-col h-90 w-60 gap-8 rounded-3xl mt-5 overflow-hidden shadow-lg bg-white border-solid border-black">
-      <img className="w-41 rounded-3xl h-64 p-5 mt-3" src={product.image} alt={product.name} /> //h30 w40
+      {/* h30 w40 */}
+      <img className="w-41 rounded-3xl h-64 p-5 mt-3" src={product.image} alt={product.name} />  
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2">{product.name}</div>
         <p className="text-gray-700 text-base">Price: ₹{product.price}</p>

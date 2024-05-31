@@ -6,15 +6,15 @@ import React from 'react';
 function Happybirthday({name}){
   return (
     // <div className="venkat bg-pink-600 flex flex-col items-center justify-center h-screen bg-blue-50 overflow-hidden">
-    <div className=" m-20 venkat   flex flex-col items-center justify-center h-80 overflow-hidden ">
-      <span><img className='relative w-80 h-50' src={celebration} alt="celeb bg" /></span>
-      <div className="relative flex justify-center w-full max-w-lg ">
+    <div className=" border-2 border-black bg-celeb bg-cover bg-white ml-0 mt-10 mb-20  w-full p-10 flex flex-col items-center justify-center h-40 overflow-hidden ">
+      {/* <span><img className='relative w-80 h-50' src={celebration} alt="celeb bg" /></span> */}
+      <div className=" bg-cel relative flex justify-center w-full max-w-lg ">
         <div className="balloon balloon-1 bg-black"></div>
         <div className="balloon balloon-2"></div>
         <div className="balloon balloon-3"></div>
         <div className="balloon balloon-4"></div>
       </div>
-      <h1 className="text-4xl font-headerf h-20  text-black mt-10 ">{name} </h1>
+      <h1 className="text-4xl font-headerf h-40   text-black mt-10 ">{name} </h1>
     </div>
   );
 };
