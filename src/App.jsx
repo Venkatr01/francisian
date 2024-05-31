@@ -9,9 +9,6 @@ import Paths from './components/Paths';
 
 function App() {
   return (
-    //    <div className="App">
-    //   <HappyBirthday />
-    // </div>
     <div className='App bg-white'>
     <Paths/>
     </div>
