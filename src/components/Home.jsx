@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Happybirthday from './Happybirthday';
+import Timetable from './Timetable';
 function Home() {
   const [msg,setMsg] = useState("Welcome");
 
@@ -35,11 +36,12 @@ function Home() {
   
 
   return (
-    <div className='mt-0 flex justify-center align-middle ' >
-        <div className='flex flex-row gap-1' >
+    <div className=' ' >
+        <div className='' >
           <Happybirthday name={msg} />
           {/* {msg} */}
         </div>
+        <Timetable />
     </div>
   )
 }
