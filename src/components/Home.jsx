@@ -9,7 +9,7 @@ function Home() {
   const month = date.getMonth()
   const formattedDate = `${day}-${month+1}`
   const people = [
-    { name: "Deepak Sirvee", birthday: "31-5" },
+    { name: "Sufiya", birthday: "31-5" },
     { name: "venkat ", birthday: "29-5" },
 
     { name: "Rishi", birthday: "27-4" },
