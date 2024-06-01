@@ -30,8 +30,8 @@ function Header() {
                 </NavLink>
               </li>
               <li className='text-gray-400 hover:bg-gray-700 hover:text-white p-2 rounded-md'>
-                <NavLink to="/events" className={({ isActive }) => (isActive ? "text-white" : 'text-white')} >
-                Events
+                <NavLink to="/confession" className={({ isActive }) => (isActive ? "text-white" : 'text-white')} >
+                Confessions
                 </NavLink>
               </li>
               <li className='text-gray-400 hover:bg-gray-700 hover:text-white p-2 rounded-md' >

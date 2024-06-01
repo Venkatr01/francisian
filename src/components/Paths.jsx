@@ -7,6 +7,7 @@ import Root from './Root';
 import Home from './Home';
 import Events from './Events';
 import Assignments from './Assignments';
+import Confession from './Confession';
 
 function Paths() {
   return (
@@ -16,7 +17,7 @@ function Paths() {
           <Route path='/' element={<Root/>}>
             <Route path='/' element={<Home/>} />
             <Route path='/announcements' element={<Announcements/>} />
-            <Route path='/events' element={<Events/>} />
+            <Route path='/confession' element={<Events/>} />
             <Route path='/market' element= { <Market /> } />
             <Route path='/assignments' element= { <Assignments /> } />
           </Route>

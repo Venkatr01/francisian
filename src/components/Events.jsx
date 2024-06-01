@@ -1,10 +1,11 @@
 import React from 'react'
+import Confession from './Confession'
 
 function Events() {
   return (
-    <div className='flex justify-center align-middle py-64' >
+    <div className='' >
       {/* Wlcm to events page */}
-      
+      <Confession/>
     </div>
   )
 }

@@ -6,27 +6,24 @@ function Home() {
 
   useEffect(()=>{
     const date = new Date();
-  const day = date.getDate()
-  const month = date.getMonth()
-  const formattedDate = `${day}-${month+1}`
-  const people = [
-    { name: "Sufiya", birthday: "31-5" },
-    { name: "venkat ", birthday: "29-5" },
-
-    { name: "Rishi", birthday: "27-4" },
-    { name: "Hemanth", birthday: "02-7" },
-    { name: "Ankit", birthday: "30-5" },
-    { name: "Bharat", birthday: "18-5" },
-    { name: "Diwakar", birthday: "1-11" },
-    { name: "Deepak pt", birthday: "16-5" },
-    { name: "Preetham", birthday: "19-2" },
-    { name: "Akash p", birthday: "10-12" },
-    { name: "Akash Maurya", birthday: "01-6" },
-    { name: "Akash Maurya", birthday: "1-6" },
-
-    { name: "Sahil", birthday: "23-1" },
-    { name: "Vamsi", birthday: "23-5" }
-  ];
+    const day = date.getDate()
+    const month = date.getMonth()
+    const formattedDate = `${day}-${month+1}`
+    const people = [
+      { name: "Sufiya", birthday: "31-5" },
+      { name: "venkat ", birthday: "29-5" },
+      { name: "Rishi", birthday: "27-4" },
+      { name: "Hemanth", birthday: "02-7" },
+      { name: "Ankit", birthday: "30-5" },
+      { name: "Bharat", birthday: "18-5" },
+      { name: "Diwakar", birthday: "1-11" },
+      { name: "Deepak pt", birthday: "16-5" },
+      { name: "Preetham", birthday: "19-2" },
+      { name: "Akash p", birthday: "10-12" },
+      { name: "Akash Maurya", birthday: "1-6" },
+      { name: "Sahil", birthday: "23-1" },
+      { name: "Vamsi", birthday: "23-5" }
+    ];
 
   const birthdayToday = people.filter(person => person.birthday === formattedDate);
   const namesWithBirthdayToday = birthdayToday.map(person => person.name);
@@ -41,7 +38,6 @@ function Home() {
     <div className=' ' >
         <div className='' >
           <Happybirthday name={msg} />
-          {/* {msg} */}
         </div>
         <Timetable />
     </div>
@@ -49,11 +45,6 @@ function Home() {
 }
 
 
- function Birthday() {
-
-  
-
-}
 
 export default Home
 
