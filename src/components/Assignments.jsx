@@ -1,9 +1,11 @@
 import React from 'react'
+import Dropdown from './Dropdown'
 // imp
 function Assignments() {
   return (
-    <div className='flex justify-center align-middle py-64'>
-      Assignments
+    <div className='ml-20'>
+      Assignments <br />
+      <Dropdown />
     </div>
   )
 }

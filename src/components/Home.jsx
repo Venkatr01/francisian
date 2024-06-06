@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import Happybirthday from './Happybirthday';
 import Timetable from './Timetable';
+import Dropdown from './Dropdown';
 function Home() {
-  const [msg,setMsg] = useState("Welcome");
+  const [msg,setMsg] = useState("");
 
   useEffect(()=>{
     const date = new Date();
@@ -11,7 +12,7 @@ function Home() {
     const formattedDate = `${day}-${month+1}`
     const people = [
       { name: "Sufiya", birthday: "31-5" },
-      { name: "venkat ", birthday: "29-5" },
+      { name: "venkat ", birthday: "2-6" },
       { name: "Rishi", birthday: "27-4" },
       { name: "Hemanth", birthday: "02-7" },
       { name: "Ankit", birthday: "30-5" },
@@ -27,9 +28,9 @@ function Home() {
 
   const birthdayToday = people.filter(person => person.birthday === formattedDate);
   const namesWithBirthdayToday = birthdayToday.map(person => person.name);
-  console.log(namesWithBirthdayToday)
+  // console.log(namesWithBirthdayToday)
 
-  setMsg("Happy Birthday "+ namesWithBirthdayToday.join(', '))
+  setMsg("Happy Birthday venkat "+ namesWithBirthdayToday.join(', '))
  
   },[])
   
@@ -39,7 +40,10 @@ function Home() {
         <div className='' >
           <Happybirthday name={msg} />
         </div>
-        <Timetable />
+        {/* <Timetable /> */}
+        <div className='ml-30 pl-20'>
+          <Dropdown/>
+        </div>
     </div>
   )
 }

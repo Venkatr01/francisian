@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Timetable = (option) => {
+const Timetable1 = (option) => {
   return (
     <div className="overflow-x-auto">
       <table className="min-w-full bg-white border border-gray-300">
@@ -19,7 +19,7 @@ const Timetable = (option) => {
         </thead>
         <tbody>
           {[
-            { day: 'MONDAY', times: ['MD', 'MD LAB', 'BREAK', 'EC', 'ML', 'LUNCH','OR/ST', 'PROJECT'] },
+            { day: 'DAY', times: ['MD', 'MD LAB', 'BREAK', 'EC', 'ML', 'LUNCH','OR/ST', 'PROJECT'] },
             { day: 'TUESDAY', times: ['EC', 'ML', 'BREAK', 'MD', 'OR','LUNCH', 'PROJECT', ''] },
             { day: 'WEDNESDAY', times: ['ML', 'ML LAB', 'BREAK', 'MD LAB', 'MD LAB','LUNCH', 'PROJECT', 'INTERNSHIP'] },
             { day: 'THURSDAY', times: ['EC', 'MD', 'BREAK', 'ML LAB', 'ML LAB','LUNCH', 'PLACEMENT', 'PROJECT'] },
@@ -34,7 +34,7 @@ const Timetable = (option) => {
           ))}
         </tbody>
       </table>
-      {console.log("TT cons"+ option)}
+      {/* {console.log("TT cons"+ option)} */}
     </div>
   );
 };
@@ -43,4 +43,4 @@ const Timetable = (option) => {
 
 
 
-export default Timetable;
+export default Timetable1;
