@@ -141,7 +141,7 @@ function Home() {
           <Happybirthday name={msg} />
         </div>
         {/* <Timetable /> */}
-        <div className='ml-30 pl-10'>
+        <div className='ml-30 pl-10 mr-10'>
           <Dropdown/>
         </div>
     </div>
