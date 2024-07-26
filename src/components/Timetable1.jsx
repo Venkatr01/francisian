@@ -19,11 +19,11 @@ const Timetable1 = (option) => {
         </thead>
         <tbody>
           {[
-            { day: 'DAY', times: ['MD', 'MD LAB', 'BREAK', 'EC', 'ML', 'LUNCH','OR/ST', 'PROJECT'] },
-            { day: 'TUESDAY', times: ['EC', 'ML', 'BREAK', 'MD', 'OR','LUNCH', 'PROJECT', ''] },
-            { day: 'WEDNESDAY', times: ['ML', 'ML LAB', 'BREAK', 'MD LAB', 'MD LAB','LUNCH', 'PROJECT', 'INTERNSHIP'] },
-            { day: 'THURSDAY', times: ['EC', 'MD', 'BREAK', 'ML LAB', 'ML LAB','LUNCH', 'PLACEMENT', 'PROJECT'] },
-            { day: 'FRIDAY', times: ['ML', 'ML LAB', 'BREAK', 'OR/ST', 'MD','LUNCH', 'MD LAB', 'INTERNSHIP'] },
+            { day: 'DAY', times: ['AI', 'AI LAB', 'BREAK', 'SE', 'IT', 'LUNCH','ELECTIVE', 'LANG'] },
+            { day: 'TUESDAY', times: ['SE', 'IT', 'BREAK', 'AI', 'ELECTIVE','LUNCH', 'LANG', ''] },
+            { day: 'WEDNESDAY', times: ['IT', 'IT LAB', 'BREAK', 'AI LAB', 'AI LAB','LUNCH', 'LANG', 'SPORTS'] },
+            { day: 'THURSDAY', times: ['SE', 'AI', 'BREAK', 'IT LAB', 'IT LAB','LUNCH', 'PLACEMENT', 'LANG'] },
+            { day: 'FRIDAY', times: ['IT', 'IT LAB', 'BREAK', 'ELECTIVE', 'AI','LUNCH', 'AI LAB', 'SPORTS'] },
           ].map((row, rowIndex) => (
             <tr key={rowIndex} className="border border-gray-300">
               <td className="bg-yellow-500 text-white px-4 py-2 border border-gray-300">{row.day}</td>

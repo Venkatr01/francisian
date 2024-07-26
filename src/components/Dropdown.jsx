@@ -15,11 +15,7 @@ const Dropdown = ({option}) => {
     setIsOpen(false);
   };
 
-//   useEffect(() =>{
-//     if(selectedOption === "Option 3"){
-//         alert("working");
-//     }
-//   },[selectedOption])
+
   return (
     <div className="relative inline-block text-left">
       <div>
@@ -38,14 +34,19 @@ const Dropdown = ({option}) => {
       {isOpen && (
         <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
           <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-            <button onClick={() => handleOptionClick('BCA I')} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">BCA I</button>
             <button onClick={() => handleOptionClick('BCA II')} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">BCA II</button>
             <button onClick={() => handleOptionClick('BCA III')} className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">BCA III</button>
           </div>
         </div>
       )}
       {/* {console.log(selectedOption)} */}
-      {selectedOption === "Option 3" ? <Timetable option={selectedOption} /> : <Timetable1/> }
+
+      {selectedOption === "BCA II" ? <Timetable1/> :  <Timetable/> }
+
+
+
+
+
       
     </div>
   );

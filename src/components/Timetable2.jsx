@@ -19,10 +19,10 @@ const Timetable = (option) => {
         </thead>
         <tbody>
           {[
-            { day: 'MONDAY', times: ['MOBILE DEV', 'MOBILE DEV LAB', 'BREAK', 'EC DESIGN', 'ML', 'LUNCH','OR/ST', 'PROJECT'] },
-            { day: 'TUESDAY', times: ['EC DESIGN', 'ML', 'BREAK', 'MD', 'OR','LUNCH', 'PROJECT', ''] },
+            { day: 'MONDAY', times: ['BCA II', 'MD LAB', 'BREAK', 'EC', 'ML', 'LUNCH','OR/ST', 'PROJECT'] },
+            { day: 'TUESDAY', times: ['EC', 'ML', 'BREAK', 'MD', 'OR','LUNCH', 'PROJECT', ''] },
             { day: 'WEDNESDAY', times: ['ML', 'ML LAB', 'BREAK', 'MD LAB', 'MD LAB','LUNCH', 'PROJECT', 'INTERNSHIP'] },
-            { day: 'THURSDAY', times: ['EC DESIGN', 'MD', 'BREAK', 'ML LAB', 'ML LAB','LUNCH', 'PLACEMENT', 'PROJECT'] },
+            { day: 'THURSDAY', times: ['EC', 'MD', 'BREAK', 'ML LAB', 'ML LAB','LUNCH', 'PLACEMENT', 'PROJECT'] },
             { day: 'FRIDAY', times: ['ML', 'ML LAB', 'BREAK', 'OR/ST', 'MD','LUNCH', 'MD LAB', 'INTERNSHIP'] },
           ].map((row, rowIndex) => (
             <tr key={rowIndex} className="border border-gray-300">
@@ -34,6 +34,7 @@ const Timetable = (option) => {
           ))}
         </tbody>
       </table>
+      {console.log("TT cons"+ option)}
     </div>
   );
 };
