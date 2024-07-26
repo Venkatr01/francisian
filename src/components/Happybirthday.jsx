@@ -14,7 +14,9 @@ function Happybirthday({name}){
         <div className="balloon balloon-3"></div>
         <div className="balloon balloon-4"></div> */}
       </div>
-      <h1 className="text-4xl font-headerf h-40   text-black mt-10 ">{name} </h1>
+      {/* <div className='bg-white'> */}
+      <h1 className="bg-white text-4xl font-headerf h-40   text-black mt-5 ">{name} </h1>
+      {/* </div> */}
     </div>
   );
 };
