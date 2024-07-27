@@ -82,6 +82,40 @@ body{
   animation-delay: 4.5s;
 }
 
+.card{
+  flex-direction: column;
+  background-color: rgb(243, 240, 240);
+  width: 250px ;
+  height: 370px;
+  padding-top: 30px;
+  border-radius: 17px;
+  border: 2px solid black;
+}
+
+.img{
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+
+
+}
+.desc{
+  padding-top: 20px;
+  padding-left: 18px;
+}
+.bname{
+  padding-top: 20px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.cost{
+  font-weight: bolder;
+  font-size: 26px;
+}
+.discount{
+  text-decoration: line-through;
+}
+
 
 
 /* :root {

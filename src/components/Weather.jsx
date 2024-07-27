@@ -45,7 +45,7 @@ function Weather() {
             <div className="font-bold text-xl mb-2">{weatherData.location}</div>
             {/* <p className=" text-base">{weatherData.description}</p> */}
             <p className=" text-base">Temperature: {weatherData.temperature}°C</p>
-            <p className=" text-base">Humidity: {weatherData.humidity}</p>
+            <p className=" text-base">Humidity: {weatherData.humidity}%</p>
             <p className=" text-base">Wind Speed: {weatherData.windSpeed} Km/h</p>
         </div>
     </div>
