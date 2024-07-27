@@ -14,7 +14,6 @@ function Header() {
     // <Router>
       <div className='flex justify-between items-center w-screen  border-solid border-b-2 border-black bg-gray-800 '>
         <div className='flex p-2 text-xl' >
-          {/* <h1 className='  flex justify-center  text-white font-press-start '>Francisian</h1> */}
           <img className='w-22 h-10' src={newlogo} alt="loading.." />
         </div>
           <div className='flex justify-center p-2 text-blue-800 scroll-smooth' >
@@ -41,7 +40,7 @@ function Header() {
               </li>
               <li className='text-gray-400 hover:bg-gray-700 hover:text-white p-2 rounded-md' >
                 <NavLink to="/assignments" className={({ isActive }) => (isActive ?   "text-white" : 'text-white p-2') } >
-                Assignments
+                Voting
                 </NavLink>
               </li>
           </ul>

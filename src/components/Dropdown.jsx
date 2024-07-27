@@ -1,7 +1,5 @@
 // Dropdown.js
 import React, { useEffect, useState } from 'react';
-import Home from './Home';
-import Confession from './Confession';
 import Timetable from './Timetable';
 import Timetable1 from './Timetable1';
 
@@ -39,7 +37,6 @@ const Dropdown = ({option}) => {
           </div>
         </div>
       )}
-      {/* {console.log(selectedOption)} */}
 
       {selectedOption === "BCA II" ? <Timetable1/> :  <Timetable/> }
 
